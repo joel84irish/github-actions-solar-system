@@ -72,8 +72,8 @@ jobs:
         - uses:  cschleiden/replace-tokens@v1
           with:
             tokenPrefix: '_{_'
-            tokenSuffix: '_{'
-            files: 'kubernetes/development/*.yaml'
+            tokenSuffix: '_{_'
+            files: '["kubernetes/development/*.yam"]'
           env:
             NAMESPACE: '${{ vars.NAMESPACE }}'
             REPLICAS: '${{ vars.REPLICAS }}'
