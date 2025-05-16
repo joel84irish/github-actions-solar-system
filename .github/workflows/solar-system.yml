@@ -44,7 +44,7 @@ jobs:
           with:
             node-version: 18
         - run: npm install
-        - continue-on-failure: true
+        - continue-on-error: true
           run: npm run code-coverage
         - uses: actions/upload-artifact@v4
           with:
